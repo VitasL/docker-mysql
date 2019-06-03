@@ -1,0 +1,7 @@
+CREATE USER 'deploy'@'%' IDENTIFIED BY '0D9F8640-3FB1-4A56-9E26-646F71EE2E45';
+CREATE USER 'deploy'@'localhost' IDENTIFIED BY '0D9F8640-3FB1-4A56-9E26-646F71EE2E45';
+
+GRANT ALL ON *.* TO 'deploy'@'%';
+GRANT ALL ON *.* TO 'deploy'@'localhost';
+
+flush privileges;
